@@ -23,7 +23,7 @@ async function live(u){if(!u||u.startsWith('http:'))return null;try{await fetch(
  const [st,hi,inc]=await Promise.all(['data/status.json','data/history.json','data/incidents.json'].map(f=>fetch(f+'?'+Date.now()).then(r=>r.json()).catch(()=>null)));
  if(!st){document.getElementById('banner').textContent='Sem dados ainda';return}
  document.getElementById('upd').textContent='Atualizado '+fmt(st.updated);
- const down=st.services.filter(s=>!s.up);const b=document.getElementById('banner');
+ const stale=Date.now()/1000-st.updated>1200;if(stale)document.getElementById('upd').textContent+=' — ⚠ dados desatualizados';const down=st.services.filter(s=>!s.up);const b=document.getElementById('banner');
  b.style.background=down.length?'#3b0d10':'#0f2e1a';b.textContent=down.length?`⚠ ${down.length} serviço(s) com problema: `+down.map(s=>s.name).join(', '):'✓ Todos os sistemas operacionais';
  const groups={};st.services.forEach(s=>(groups[s.group]??=[]).push(s));let h='';
  for(const g in groups){h+=`<h2>${g}</h2>`;for(const s of groups[g]){const pts=(hi?.[s.id]||[]).slice(-90);
