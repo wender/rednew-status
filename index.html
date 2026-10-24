@@ -1,0 +1,38 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rednew Status</title><style>
+:root{--red:#e11d2e;--ok:#16a34a;--bad:#dc2626;--bg:#0b0b0f;--card:#15151c;--mut:#9aa0aa}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:#f4f4f5}
+header{padding:28px 20px;border-bottom:3px solid var(--red);display:flex;align-items:center;gap:12px;max-width:900px;margin:auto}
+header b{color:var(--red)}main{max-width:900px;margin:auto;padding:20px}
+#banner{padding:16px;border-radius:10px;font-weight:600;margin-bottom:20px}
+h2{font-size:14px;text-transform:uppercase;color:var(--mut);letter-spacing:.08em;margin:24px 0 8px}
+.svc{background:var(--card);border-radius:10px;padding:12px 14px;margin:6px 0}
+.row{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:8px}
+.bars{display:flex;gap:1px;margin-top:8px;height:22px}.bars i{flex:1;border-radius:2px;background:#333}
+small{color:var(--mut)}a{color:inherit}.inc{background:var(--card);padding:10px 14px;border-radius:8px;margin:6px 0}
+</style></head><body>
+<header><svg width="34" height="34" viewBox="0 0 34 34"><rect width="34" height="34" rx="8" fill="#e11d2e"/><text x="17" y="23" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">R</text></svg>
+<div><div style="font-size:20px;font-weight:700"><b>Rednew</b> Status</div><small id="upd">carregando…</small></div></header>
+<main><div id="banner">…</div><div id="list"></div><h2>Incidentes recentes</h2><div id="inc"><small>Nenhum.</small></div>
+<p><small>Checagens a cada 5 min via GitHub Actions (fora do VPS). "ao vivo" = checagem do seu navegador agora.</small></p></main>
+<script>
+const fmt=t=>new Date(t*1000).toLocaleString('pt-BR');
+async function live(u){if(!u||u.startsWith('http:'))return null;try{await fetch(u,{mode:'no-cors',cache:'no-store',signal:AbortSignal.timeout(8000)});return true}catch(e){return false}}
+(async()=>{
+ const [st,hi,inc]=await Promise.all(['data/status.json','data/history.json','data/incidents.json'].map(f=>fetch(f+'?'+Date.now()).then(r=>r.json()).catch(()=>null)));
+ if(!st){document.getElementById('banner').textContent='Sem dados ainda';return}
+ document.getElementById('upd').textContent='Atualizado '+fmt(st.updated);
+ const down=st.services.filter(s=>!s.up);const b=document.getElementById('banner');
+ b.style.background=down.length?'#3b0d10':'#0f2e1a';b.textContent=down.length?`⚠ ${down.length} serviço(s) com problema: `+down.map(s=>s.name).join(', '):'✓ Todos os sistemas operacionais';
+ const groups={};st.services.forEach(s=>(groups[s.group]??=[]).push(s));let h='';
+ for(const g in groups){h+=`<h2>${g}</h2>`;for(const s of groups[g]){const pts=(hi?.[s.id]||[]).slice(-90);
+  h+=`<div class="svc"><div class="row"><div><span class="dot" style="background:${s.up?'var(--ok)':'var(--bad)'}"></span>${s.url?`<a href="${s.url}" target="_blank">${s.name}</a>`:s.name}</div>
+  <small>${s.up?'Operacional':'Fora ('+s.code+')'} · ${s.ms}ms · 24h ${s.uptime24h??'–'}% · 7d ${s.uptime7d??'–'}% · 30d ${s.uptime30d??'–'}% · <span id="l-${s.id}">ao vivo…</span></small></div>
+  <div class="bars">${pts.map(p=>`<i title="${fmt(p[0])}" style="background:${p[1]?'var(--ok)':'var(--bad)'}"></i>`).join('')}</div></div>`}}
+ document.getElementById('list').innerHTML=h;
+ if(inc?.length)document.getElementById('inc').innerHTML=inc.slice(0,15).map(i=>`<div class="inc"><b>${i.name}</b> <small>${fmt(i.start)} → ${i.end?fmt(i.end)+' ('+Math.round((i.end-i.start)/60)+' min)':'em andamento'}</small></div>`).join('');
+ st.services.forEach(async s=>{const r=await live(s.url);const e=document.getElementById('l-'+s.id);if(e)e.textContent=r===null?'ao vivo n/d':r?'ao vivo ✓':'ao vivo ✗'});
+ setTimeout(()=>location.reload(),300000);
+})();
+</script></body></html>

@@ -1,0 +1,195 @@
+[
+ {
+  "id": "redbase",
+  "group": "RedBase",
+  "name": "RedBase API (auth)",
+  "url": "https://api.redbase.dev/auth/v1/health",
+  "ok": [
+   200
+  ]
+ },
+ {
+  "id": "tb-auth",
+  "group": "APIs",
+  "name": "Talking Bubble auth",
+  "url": "https://api.talkingbubble.app/auth/v1/health",
+  "ok": [
+   200
+  ]
+ },
+ {
+  "id": "tb-rest",
+  "group": "APIs",
+  "name": "Talking Bubble REST",
+  "url": "https://api.talkingbubble.app/rest/v1/",
+  "ok": [
+   200,
+   401
+  ]
+ },
+ {
+  "id": "pa-auth",
+  "group": "APIs",
+  "name": "PayAgenda auth",
+  "url": "https://api.payagenda.com/auth/v1/health",
+  "ok": [
+   200
+  ]
+ },
+ {
+  "id": "sa-auth",
+  "group": "APIs",
+  "name": "Snout Alert auth",
+  "url": "https://api.snoutalert.com/auth/v1/health",
+  "ok": [
+   200
+  ]
+ },
+ {
+  "id": "ob-auth",
+  "group": "APIs",
+  "name": "Orçamento Box auth",
+  "url": "https://api.orcamentobox.com.br/auth/v1/health",
+  "ok": [
+   200
+  ]
+ },
+ {
+  "id": "ob-rest",
+  "group": "APIs",
+  "name": "Orçamento Box REST",
+  "url": "https://api.orcamentobox.com.br/rest/v1/",
+  "ok": [
+   200,
+   401
+  ]
+ },
+ {
+  "id": "mcs-auth",
+  "group": "APIs",
+  "name": "My Construction Status auth",
+  "url": "https://api.myconstructionstatus.com/auth/v1/health",
+  "ok": [
+   200
+  ]
+ },
+ {
+  "id": "vs-auth",
+  "group": "APIs",
+  "name": "Van Segura auth",
+  "url": "https://api.vansegura.com.br/auth/v1/health",
+  "ok": [
+   200
+  ]
+ },
+ {
+  "id": "nc-auth",
+  "group": "APIs",
+  "name": "Nível Certo auth",
+  "url": "https://api.nivelcerto.com.br/auth/v1/health",
+  "ok": [
+   200
+  ]
+ },
+ {
+  "id": "rv",
+  "group": "Sites",
+  "name": "Rednew Ventures",
+  "url": "https://rednewventures.com",
+  "ok": [
+   200
+  ]
+ },
+ {
+  "id": "tb",
+  "group": "Sites",
+  "name": "Talking Bubble",
+  "url": "https://talkingbubble.app",
+  "ok": [
+   200
+  ]
+ },
+ {
+  "id": "pa",
+  "group": "Sites",
+  "name": "PayAgenda",
+  "url": "https://payagenda.com",
+  "ok": [
+   200
+  ]
+ },
+ {
+  "id": "sa",
+  "group": "Sites",
+  "name": "Snout Alert",
+  "url": "https://snoutalert.com",
+  "ok": [
+   200
+  ]
+ },
+ {
+  "id": "ob",
+  "group": "Sites",
+  "name": "Orçamento Box",
+  "url": "https://orcamentobox.com.br",
+  "ok": [
+   200
+  ]
+ },
+ {
+  "id": "mcs",
+  "group": "Sites",
+  "name": "My Construction Status",
+  "url": "https://myconstructionstatus.com",
+  "ok": [
+   200
+  ]
+ },
+ {
+  "id": "vs",
+  "group": "Sites",
+  "name": "Van Segura",
+  "url": "https://vansegura.com.br",
+  "ok": [
+   200
+  ]
+ },
+ {
+  "id": "nc",
+  "group": "Sites",
+  "name": "Nível Certo",
+  "url": "https://nivelcerto.com.br",
+  "ok": [
+   200
+  ]
+ },
+ {
+  "id": "cg",
+  "group": "Sites",
+  "name": "Clipboard Guru",
+  "url": "https://clipboard.guru",
+  "ok": [
+   200
+  ]
+ },
+ {
+  "id": "postal",
+  "group": "Infra",
+  "name": "Postal (web)",
+  "url": "https://postal.server1.rednewventures.com",
+  "ok": [
+   200,
+   302
+  ]
+ },
+ {
+  "id": "coolify",
+  "group": "Infra",
+  "name": "Coolify",
+  "url": "http://104.207.74.139:8000",
+  "ok": [
+   200,
+   302
+  ]
+ }
+]
