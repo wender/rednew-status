@@ -48,7 +48,7 @@
  {
   "id": "ob-auth",
   "group": "APIs",
-  "name": "Orçamento Box auth",
+  "name": "Or\u00e7amento Box auth",
   "url": "https://api.orcamentobox.com.br/auth/v1/health",
   "ok": [
    200
@@ -57,7 +57,7 @@
  {
   "id": "ob-rest",
   "group": "APIs",
-  "name": "Orçamento Box REST",
+  "name": "Or\u00e7amento Box REST",
   "url": "https://api.orcamentobox.com.br/rest/v1/",
   "ok": [
    200,
@@ -85,7 +85,7 @@
  {
   "id": "nc-auth",
   "group": "APIs",
-  "name": "Nível Certo auth",
+  "name": "N\u00edvel Certo auth",
   "url": "https://api.nivelcerto.com.br/auth/v1/health",
   "ok": [
    200
@@ -130,7 +130,7 @@
  {
   "id": "ob",
   "group": "Sites",
-  "name": "Orçamento Box",
+  "name": "Or\u00e7amento Box",
   "url": "https://orcamentobox.com.br",
   "ok": [
    200
@@ -157,7 +157,7 @@
  {
   "id": "nc",
   "group": "Sites",
-  "name": "Nível Certo",
+  "name": "N\u00edvel Certo",
   "url": "https://nivelcerto.com.br",
   "ok": [
    200
@@ -170,26 +170,6 @@
   "url": "https://clipboard.guru",
   "ok": [
    200
-  ]
- },
- {
-  "id": "postal",
-  "group": "Infra",
-  "name": "Postal (web)",
-  "url": "https://postal.server1.rednewventures.com",
-  "ok": [
-   200,
-   302
-  ]
- },
- {
-  "id": "coolify",
-  "group": "Infra",
-  "name": "Coolify",
-  "url": "http://104.207.74.139:8000",
-  "ok": [
-   200,
-   302
   ]
  }
 ]
