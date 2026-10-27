@@ -228,30 +228,6 @@
    "uptime24h": 100.0,
    "uptime7d": 100.0,
    "uptime30d": 100.0
-  },
-  {
-   "id": "postal",
-   "group": "Infra",
-   "name": "Postal (web)",
-   "url": "https://postal.server1.rednewventures.com",
-   "up": true,
-   "code": 302,
-   "ms": 638,
-   "uptime24h": 100.0,
-   "uptime7d": 100.0,
-   "uptime30d": 100.0
-  },
-  {
-   "id": "coolify",
-   "group": "Infra",
-   "name": "Coolify",
-   "url": "http://104.207.74.139:8000",
-   "up": true,
-   "code": 302,
-   "ms": 178,
-   "uptime24h": 100.0,
-   "uptime7d": 100.0,
-   "uptime30d": 100.0
   }
  ]
 }
