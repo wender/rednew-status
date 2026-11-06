@@ -92,6 +92,15 @@
   ]
  },
  {
+  "id": "cg-api",
+  "group": "APIs",
+  "name": "Clipboard Guru API",
+  "url": "https://clipboard.guru/api/health",
+  "ok": [
+   200
+  ]
+ },
+ {
   "id": "rv",
   "group": "Sites",
   "name": "Rednew Ventures",
