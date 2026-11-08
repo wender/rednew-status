@@ -1,5 +1,5 @@
 {
- "updated": 1794139218,
+ "updated": 1794160396,
  "services": [
   {
    "id": "redbase",
@@ -8,7 +8,7 @@
    "url": "https://api.redbase.dev/auth/v1/health",
    "up": true,
    "code": 200,
-   "ms": 271,
+   "ms": 417,
    "uptime24h": 100.0,
    "uptime7d": 100.0,
    "uptime30d": 100.0
@@ -20,7 +20,7 @@
    "url": "https://api.talkingbubble.app/auth/v1/health",
    "up": true,
    "code": 200,
-   "ms": 241,
+   "ms": 408,
    "uptime24h": 100.0,
    "uptime7d": 100.0,
    "uptime30d": 100.0
@@ -32,7 +32,7 @@
    "url": "https://api.talkingbubble.app/rest/v1/",
    "up": true,
    "code": 401,
-   "ms": 202,
+   "ms": 362,
    "uptime24h": 100.0,
    "uptime7d": 100.0,
    "uptime30d": 100.0
@@ -44,7 +44,7 @@
    "url": "https://api.payagenda.com/auth/v1/health",
    "up": true,
    "code": 200,
-   "ms": 259,
+   "ms": 392,
    "uptime24h": 100.0,
    "uptime7d": 100.0,
    "uptime30d": 100.0
@@ -56,7 +56,7 @@
    "url": "https://api.snoutalert.com/auth/v1/health",
    "up": true,
    "code": 200,
-   "ms": 196,
+   "ms": 314,
    "uptime24h": 100.0,
    "uptime7d": 100.0,
    "uptime30d": 100.0
@@ -68,7 +68,7 @@
    "url": "https://api.orcamentobox.com.br/auth/v1/health",
    "up": true,
    "code": 200,
-   "ms": 498,
+   "ms": 603,
    "uptime24h": 100.0,
    "uptime7d": 100.0,
    "uptime30d": 100.0
@@ -80,7 +80,7 @@
    "url": "https://api.orcamentobox.com.br/rest/v1/",
    "up": true,
    "code": 401,
-   "ms": 482,
+   "ms": 532,
    "uptime24h": 100.0,
    "uptime7d": 100.0,
    "uptime30d": 100.0
@@ -92,7 +92,7 @@
    "url": "https://api.myconstructionstatus.com/auth/v1/health",
    "up": true,
    "code": 200,
-   "ms": 214,
+   "ms": 318,
    "uptime24h": 100.0,
    "uptime7d": 100.0,
    "uptime30d": 100.0
@@ -104,7 +104,7 @@
    "url": "https://api.vansegura.com.br/auth/v1/health",
    "up": true,
    "code": 200,
-   "ms": 340,
+   "ms": 439,
    "uptime24h": 100.0,
    "uptime7d": 100.0,
    "uptime30d": 100.0
@@ -116,7 +116,7 @@
    "url": "https://api.nivelcerto.com.br/auth/v1/health",
    "up": true,
    "code": 200,
-   "ms": 515,
+   "ms": 523,
    "uptime24h": 100.0,
    "uptime7d": 100.0,
    "uptime30d": 100.0
@@ -128,7 +128,7 @@
    "url": "https://clipboard.guru/api/health",
    "up": true,
    "code": 200,
-   "ms": 233,
+   "ms": 324,
    "uptime24h": 100.0,
    "uptime7d": 100.0,
    "uptime30d": 100.0
@@ -140,7 +140,7 @@
    "url": "https://rednewventures.com",
    "up": true,
    "code": 200,
-   "ms": 188,
+   "ms": 350,
    "uptime24h": 100.0,
    "uptime7d": 100.0,
    "uptime30d": 100.0
@@ -152,7 +152,7 @@
    "url": "https://talkingbubble.app",
    "up": true,
    "code": 200,
-   "ms": 255,
+   "ms": 498,
    "uptime24h": 100.0,
    "uptime7d": 100.0,
    "uptime30d": 100.0
@@ -164,7 +164,7 @@
    "url": "https://payagenda.com",
    "up": true,
    "code": 200,
-   "ms": 200,
+   "ms": 376,
    "uptime24h": 100.0,
    "uptime7d": 100.0,
    "uptime30d": 100.0
@@ -176,7 +176,7 @@
    "url": "https://snoutalert.com",
    "up": true,
    "code": 200,
-   "ms": 310,
+   "ms": 387,
    "uptime24h": 100.0,
    "uptime7d": 100.0,
    "uptime30d": 100.0
@@ -188,7 +188,7 @@
    "url": "https://orcamentobox.com.br",
    "up": true,
    "code": 200,
-   "ms": 532,
+   "ms": 577,
    "uptime24h": 100.0,
    "uptime7d": 100.0,
    "uptime30d": 100.0
@@ -200,7 +200,7 @@
    "url": "https://myconstructionstatus.com",
    "up": true,
    "code": 200,
-   "ms": 212,
+   "ms": 350,
    "uptime24h": 100.0,
    "uptime7d": 100.0,
    "uptime30d": 100.0
@@ -212,7 +212,7 @@
    "url": "https://vansegura.com.br",
    "up": true,
    "code": 200,
-   "ms": 332,
+   "ms": 411,
    "uptime24h": 100.0,
    "uptime7d": 100.0,
    "uptime30d": 100.0
@@ -224,7 +224,7 @@
    "url": "https://nivelcerto.com.br",
    "up": true,
    "code": 200,
-   "ms": 521,
+   "ms": 531,
    "uptime24h": 100.0,
    "uptime7d": 100.0,
    "uptime30d": 100.0
@@ -236,7 +236,7 @@
    "url": "https://clipboard.guru",
    "up": true,
    "code": 200,
-   "ms": 491,
+   "ms": 321,
    "uptime24h": 100.0,
    "uptime7d": 100.0,
    "uptime30d": 100.0
